@@ -1,6 +1,6 @@
 # SeriLogExamples
 
-# SeriLogConsoleApp - SeriLog in .Net7 Console App 
+# 1. SeriLogConsoleApp - SeriLog in .Net7 Console App 
 
 This project is an example of how to use SeriLog in .Net7 Console App. 
 - How to separate the logs based on either log level or properties.
