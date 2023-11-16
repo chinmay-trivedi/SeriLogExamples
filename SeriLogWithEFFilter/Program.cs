@@ -38,6 +38,7 @@ try
 
     sw.Start();
     Serilog.Log.Logger.Information("*************************** Read DailyFile Started *****************************");
+    Serilog.Log.Logger.Debug("*************************** Read DailyFile Started *****************************");
     CreateDummyData();
 
 
