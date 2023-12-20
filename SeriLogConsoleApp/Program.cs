@@ -17,14 +17,17 @@ var configFile = new ConfigurationBuilder()
 Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()
             //.ReadFrom.Configuration(configFile)
+            //.WriteTo.Logger( lev => lev
+            //.Filter.ByIncludingOnly( l => l.Level == LogEventLevel.Error)
+            //.WriteTo.EventLog("SerilogConsoleApp.Eample", manageEventSource:true))
             .WriteTo.Console(new JsonFormatter())
                 .Enrich.WithProperty("Application", "SeriLogExamples")
                 .Enrich.WithDemystifiedStackTraces()
-                .WriteTo.Console(new ExpressionTemplate("{ {@t, @mt, @l: if @l = 'Information' then undefined() else @l, @x, ..@p} }\n",theme: TemplateTheme.Code))
+                .WriteTo.Console(new ExpressionTemplate("{ {@t, @mt, @l: if @l = 'Information' then undefined() else @l, @x, ..@p} }\n", theme: TemplateTheme.Code))
                  .WriteTo.Console(new ExpressionTemplate("[{@t:HH:mm:ss} {@l:u3} " + "{Substring(SourceContext, LastIndexOf(SourceContext, '.') + 1)}] {@m}\n{@x}", theme: TemplateTheme.Literate))
                 //To repart part of the temlate for all the members
-                .WriteTo.Console(new ExpressionTemplate("[{@t:HH:mm:ss} {@l:u3}] {@m}\n"+"{#each name, value in @p}   {name} = {value}\n{#end}{@x}", theme: TemplateTheme.Grayscale))
-                        //.WriteTo.Debug()
+                .WriteTo.Console(new ExpressionTemplate("[{@t:HH:mm:ss} {@l:u3}] {@m}\n" + "{#each name, value in @p}   {name} = {value}\n{#end}{@x}", theme: TemplateTheme.Grayscale))
+            //.WriteTo.Debug()
             //.WriteTo.Email(
             //            fromEmail: "no-reply@example.com",
             //            toEmail: "firstname.lastname@example.com",
@@ -59,14 +62,15 @@ try
                     .Enrich.FromLogContext()
                     .CreateLogger();
 
-    
+    appLogger.Information("*** AppLogger Activated ***");
+
     for (global::System.Int32 i = 0; i < 100; i++)
     {
-        appLogger.Information("*** AppLogger Activated ***");
+        
 
-        appLogger.Information("*** AppLogger Value::{0}", i);
+        appLogger.Information("*** AppLogger Value::{0}", @i);
 
-        Console.WriteLine(i);
+        Console.WriteLine(@i);
 
         if (i==50)
         {

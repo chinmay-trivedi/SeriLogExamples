@@ -23,6 +23,9 @@ namespace SeriLogWebAPI.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             _logger.LogInformation("WeatherForecast get method Starting.");
+            _logger.LogDebug("WeatherForecast get method Starting.");
+            _logger.LogWarning("WeatherForecast get method Starting.");
+            _logger.LogCritical("WeatherForecast get method Starting.");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
