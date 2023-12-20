@@ -1,6 +1,6 @@
 # SeriLogExamples
 
-# 1. SeriLogConsoleApp - SeriLog in .Net7 Console App 
+# 1. SeriLogConsoleApp - SeriLog in .Net8 Console App 
 
 This project is an example of how to use SeriLog in .Net7 Console App. 
 - How to separate the logs based on either log level or properties.
@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - Visual Studio 2022 or later
-- .NET 7.0 or later
+- .NET 8.0 or later
 - Serilog.Extensions.Logging
 - Serilog.Expressions
 - Serilog.Settings.Configuration
@@ -27,6 +27,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Serilog.Sinks.File
 - Serilog.Sinks.MSSqlServer
 - Serilog.Sinks.Seq
+- Serilog.Sinks.EventLog
 
 ### Installing
 
@@ -38,7 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Built With
 
 - Visual Studio 2022
-- .NET 7.0
+- .NET 8.0
 - Console App Project template
 - SeriLog.Extensions.Logging
 
