@@ -1,6 +1,6 @@
 # SeriLogExamples
 
-# 1. SeriLogConsoleApp - SeriLog in .Net8 Console App 
+# SeriLog Examples with different type of projects like .Net8 Console App, Web APIs (including minimal api), with NetFrameWork Standard
 
 This project is an example of how to use SeriLog in .Net7 Console App. 
 - How to separate the logs based on either log level or properties.
