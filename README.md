@@ -28,6 +28,8 @@ These instructions will get you a copy of the project up and running on your loc
 - Serilog.Sinks.MSSqlServer
 - Serilog.Sinks.Seq
 - Serilog.Sinks.EventLog
+- Serilog.Sinks.Email
+- Serilog.Sinks.EmailPickup
 
 ### Installing
 
