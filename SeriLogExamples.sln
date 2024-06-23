@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeriLogWithEFFilter", "Seri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeriLogNetFrameWork", "SeriLogNetFrameWork\SeriLogNetFrameWork.csproj", "{D7078569-5E25-46FD-82E7-39F2F5F65A05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeriLogWebAPI", "SeriLogWebAPI\SeriLogWebAPI.csproj", "{89F3CEE4-810F-4090-9287-FDDDB5B36579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeriLogWebAPI", "SeriLogWebAPI\SeriLogWebAPI.csproj", "{89F3CEE4-810F-4090-9287-FDDDB5B36579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeriLogMinimalWebAPI", "SeriLogMinimalWebAPI\SeriLogMinimalWebAPI.csproj", "{5FF92892-4801-4047-8772-A91A1BE73132}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeriLogMinimalWebAPI", "SeriLogMinimalWebAPI\SeriLogMinimalWebAPI.csproj", "{5FF92892-4801-4047-8772-A91A1BE73132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeriLogNet8.ConsoleApp", "SeriLogNet8.ConsoleApp\SeriLogNet8.ConsoleApp.csproj", "{4F66095E-0317-496A-B442-54CC3F07B56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogNet8.WebAPI", "SerilogNet8.WebAPI\SerilogNet8.WebAPI.csproj", "{02F2F0FA-1E7A-4858-BFC0-1447B99640B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{5FF92892-4801-4047-8772-A91A1BE73132}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FF92892-4801-4047-8772-A91A1BE73132}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FF92892-4801-4047-8772-A91A1BE73132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F66095E-0317-496A-B442-54CC3F07B56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F66095E-0317-496A-B442-54CC3F07B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F66095E-0317-496A-B442-54CC3F07B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F66095E-0317-496A-B442-54CC3F07B56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F2F0FA-1E7A-4858-BFC0-1447B99640B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F2F0FA-1E7A-4858-BFC0-1447B99640B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F2F0FA-1E7A-4858-BFC0-1447B99640B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F2F0FA-1E7A-4858-BFC0-1447B99640B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
