@@ -1,6 +1,6 @@
 # SeriLogExamples
 
-# SeriLog Examples with different type of projects like .Net8 Console App, Web APIs (including minimal api), with NetFrameWork Standard
+# SeriLog Examples with different type of projects like .Net8 Console App, Web APIs (including minimal api), with different type of sinks like File, MSSqlServer, Seq, EventLog, Email and EmailPickup.
 
 This project is an example of how to use SeriLog in .Net7 Console App. 
 - How to separate the logs based on either log level or properties.
