@@ -1,0 +1,24 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      # The .NET Framework project (SeriLogNetFrameWork) is not SDK-style, so build the SDK-style ones only.
+      - name: Build SDK-style projects
+        shell: bash
+        run: |
+          for p in $(git ls-files '*.csproj' | grep -v SeriLogNetFrameWork); do
+            dotnet build "$p" --configuration Release || exit 1
+          done
