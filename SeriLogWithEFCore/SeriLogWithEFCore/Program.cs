@@ -1,4 +1,5 @@
-﻿using Serilog;
+﻿using Microsoft.EntityFrameworkCore;
+using Serilog;
 using Serilog.Events;
 using Serilog.Sinks;
 using System.Collections;
