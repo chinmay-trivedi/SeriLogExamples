@@ -1,0 +1,14 @@
+services:
+  seq:
+    image: datalust/seq:latest
+    container_name: seq
+    environment:
+      ACCEPT_EULA: "Y"
+      SEQ_FIRSTRUN_NOAUTHENTICATION: "true" # local development only
+    ports:
+      - "5341:80" # UI and ingestion
+    volumes:
+      - seq-data:/data
+
+volumes:
+  seq-data:
