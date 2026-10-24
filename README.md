@@ -28,8 +28,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- Visual Studio 2022 or later
-- .NET 8.0 or later
+- Visual Studio 2022 or later, or the .NET CLI
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- .NET Framework 4.7.2 developer pack (only for `SeriLogNetFrameWork`, Windows only)
+
+### NuGet packages
+
+These are restored automatically on build; you do not need to install them manually.
+
 - Serilog.Extensions.Logging
 - Serilog.Expressions
 - Serilog.Settings.Configuration
