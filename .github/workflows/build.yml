@@ -22,3 +22,5 @@ jobs:
           for p in $(git ls-files '*.csproj' | grep -v SeriLogNetFrameWork); do
             dotnet build "$p" --configuration Release || exit 1
           done
+      - name: Test
+        run: dotnet test SeriLogNet8.Tests --configuration Release
