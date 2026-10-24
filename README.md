@@ -57,6 +57,16 @@ These are restored automatically on build; you do not need to install them manua
 3. Build the solution.
 4. Run the application.
 
+## Running Seq locally
+
+A `docker-compose.yml` is included to start [Seq](https://datalust.co/seq) for the Seq sink examples:
+
+```bash
+docker compose up -d
+```
+
+Seq is then available at http://localhost:5341 (UI and ingestion). Authentication is disabled, so use it for local development only. Point the Seq sink at it with `"serverUrl": "http://localhost:5341"` in the project's Serilog configuration.
+
 ## Built With
 
 - Visual Studio 2022
