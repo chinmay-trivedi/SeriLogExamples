@@ -1,5 +1,11 @@
 # SeriLogExamples
 
+[![build](https://github.com/chinmay-trivedi/SeriLogExamples/actions/workflows/build.yml/badge.svg)](https://github.com/chinmay-trivedi/SeriLogExamples/actions/workflows/build.yml)
+[![License: MIT](https://img.shields.io/github/license/chinmay-trivedi/SeriLogExamples)](LICENSE)
+![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)
+![Serilog](https://img.shields.io/badge/logging-Serilog-blue)
+[![Stars](https://img.shields.io/github/stars/chinmay-trivedi/SeriLogExamples?style=social)](https://github.com/chinmay-trivedi/SeriLogExamples/stargazers)
+
 Serilog examples for different types of .NET projects (console apps, Web APIs including minimal APIs, EF Core, and .NET Framework) with different sinks: File, MSSqlServer, Seq, EventLog, Email and EmailPickup.
 
 These projects show how to use Serilog in several kinds of .NET apps:
