@@ -24,3 +24,5 @@ jobs:
           done
       - name: Test
         run: dotnet test SeriLogNet8.Tests --configuration Release
+      - name: Test web logging helpers
+        run: dotnet test SeriLogWebAPI.Tests --configuration Release

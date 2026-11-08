@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
     <PackageReference Include="xunit" Version="2.9.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SeriLogNet8.ConsoleApp\SeriLogNet8.ConsoleApp.csproj" />
+    <ProjectReference Include="..\SerilogNet8.WebAPI\SerilogNet8.WebAPI.csproj" />
   </ItemGroup>
 
 </Project>
