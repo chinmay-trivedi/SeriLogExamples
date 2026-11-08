@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogNet8.WebAPI", "Seril
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeriLogNet8.Tests", "SeriLogNet8.Tests\SeriLogNet8.Tests.csproj", "{77DA875C-A09C-41AC-93A1-EED4AF6E231B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeriLogWebAPI.Tests", "SeriLogWebAPI.Tests\SeriLogWebAPI.Tests.csproj", "{C05CE195-C2A7-43DE-803C-895FED5D98E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,18 @@ Global
 		{77DA875C-A09C-41AC-93A1-EED4AF6E231B}.Release|x64.Build.0 = Release|Any CPU
 		{77DA875C-A09C-41AC-93A1-EED4AF6E231B}.Release|x86.ActiveCfg = Release|Any CPU
 		{77DA875C-A09C-41AC-93A1-EED4AF6E231B}.Release|x86.Build.0 = Release|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Debug|x64.Build.0 = Debug|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Debug|x86.Build.0 = Debug|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Release|x64.ActiveCfg = Release|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Release|x64.Build.0 = Release|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Release|x86.ActiveCfg = Release|Any CPU
+		{C05CE195-C2A7-43DE-803C-895FED5D98E3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
