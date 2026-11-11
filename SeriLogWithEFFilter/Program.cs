@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 var configFile = new ConfigurationBuilder()
                 //.SetBasePath(Directory.GetCurrentDirectory())                
-                .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
+                .SetBasePath(Directory.GetParent(AppContext.BaseDirectory)!.FullName)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .Build();
 
@@ -23,10 +23,10 @@ Log.Logger = new LoggerConfiguration()
             //.WriteTo.Console()
             //.WriteTo.Logger(lc => lc
             //    .Filter.ByExcluding(l => l.Level == LogEventLevel.Information || l.Level == LogEventLevel.Debug || l.Level == LogEventLevel.Warning )
-            //    .WriteTo.File(Directory.GetParent(AppContext.BaseDirectory).FullName + @"\\Logs\\log-Information-.txt", rollingInterval: RollingInterval.Day))
+            //    .WriteTo.File(Directory.GetParent(AppContext.BaseDirectory)!.FullName + @"\\Logs\\log-Information-.txt", rollingInterval: RollingInterval.Day))
             //.WriteTo.Logger(lc => lc
             //    .Filter.ByIncludingOnly(l => l.Level == LogEventLevel.Error || l.Level == LogEventLevel.Fatal)
-            //    .WriteTo.File(Directory.GetParent(AppContext.BaseDirectory).FullName + @"\\Logs\\log-Error-.txt", rollingInterval: RollingInterval.Day))
+            //    .WriteTo.File(Directory.GetParent(AppContext.BaseDirectory)!.FullName + @"\\Logs\\log-Error-.txt", rollingInterval: RollingInterval.Day))
             .CreateLogger();
 
 SelfLog.Enable(Console.Out);

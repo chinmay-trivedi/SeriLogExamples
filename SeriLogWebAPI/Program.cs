@@ -76,8 +76,8 @@ app.UseSerilogRequestLogging(options =>
     {
         diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
         diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
-        diagnosticContext.Set("RequestUser", httpContext.User.Identity.Name);
-        diagnosticContext.Set("ClientIP", httpContext.Connection.RemoteIpAddress.ToString());
+        diagnosticContext.Set("RequestUser", httpContext.User.Identity?.Name);
+        diagnosticContext.Set("ClientIP", httpContext.Connection.RemoteIpAddress?.ToString());
         diagnosticContext.Set("UserAgent", httpContext.Request.Headers["User-Agent"].FirstOrDefault());
         //diagnosticContext.Set("Resource", httpContext.GetMetricsCurrentResourceName());
     };

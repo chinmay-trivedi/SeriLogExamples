@@ -24,7 +24,7 @@ namespace SeriLogWebAPI.Middleware
             if (httpContext == null) throw new ArgumentNullException(nameof(httpContext));
 
             // Push the user name into the log context so that it is included in all log entries
-            LogContext.PushProperty("UserName", httpContext.User.Identity.Name);
+            LogContext.PushProperty("UserName", httpContext.User.Identity?.Name);
 
             // Getting the request body is a little tricky because it's a stream
             // So, we need to read the stream and then rewind it back to the beginning
@@ -39,7 +39,7 @@ namespace SeriLogWebAPI.Middleware
 
             Log.ForContext("RequestHeaders", httpContext.Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToString()), destructureObjects: true)
                .ForContext("RequestBody", requestBody)
-               .Information("Request information {RequestMethod} {RequestPath} {RequestUser} information", httpContext.Request.Method, httpContext.Request.Path, httpContext.User.Identity.Name);
+               .Information("Request information {RequestMethod} {RequestPath} {RequestUser} information", httpContext.Request.Method, httpContext.Request.Path, httpContext.User.Identity?.Name);
 
 
             // The reponse body is also a stream so we need to:
@@ -87,7 +87,7 @@ namespace SeriLogWebAPI.Middleware
                    .ForContext("ClientIP1", clientIPAddress1)
                    .ForContext("ClientIP2", clientIPAddress2)
                    .ForContext("ClientIP3", clientIPAddress3)
-                   .Information("Response information {ClientIP1} {ClientIP2} {ClientIP3} {RequestMethod} {RequestPath} {RequestUser} {statusCode}", clientIPAddress1, clientIPAddress2,clientIPAddress3, httpContext.Request.Method, httpContext.Request.Path, httpContext.User.Identity.Name, httpContext.Response.StatusCode);
+                   .Information("Response information {ClientIP1} {ClientIP2} {ClientIP3} {RequestMethod} {RequestPath} {RequestUser} {statusCode}", clientIPAddress1, clientIPAddress2,clientIPAddress3, httpContext.Request.Method, httpContext.Request.Path, httpContext.User.Identity?.Name, httpContext.Response.StatusCode);
 
                 await responseBodyMemoryStream.CopyToAsync(originalResponseBodyReference);
             }
