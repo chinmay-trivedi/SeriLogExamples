@@ -12,7 +12,7 @@ using SeriLogWithEFCore.Data.Models;
 
 
 var configFile = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
+    .SetBasePath(Directory.GetParent(AppContext.BaseDirectory)!.FullName)
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)    
     .Build();
 
